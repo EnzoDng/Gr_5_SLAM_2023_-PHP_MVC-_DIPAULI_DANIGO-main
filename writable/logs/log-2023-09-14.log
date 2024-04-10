@@ -1,0 +1,74 @@
+CRITICAL - 2023-09-14 12:36:42 --> Undefined array key "user_id"
+in APPPATH\Controllers\Controleur.php on line 109.
+ 1 APPPATH\Controllers\Controleur.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php', 109)
+ 2 APPPATH\Controllers\Controleur.php(30): App\Controllers\Controleur->submitFF('0', '0', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 12:36:57 --> Undefined array key "user_id"
+in APPPATH\Controllers\Controleur.php on line 163.
+ 1 APPPATH\Controllers\Controleur.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php', 163)
+ 2 APPPATH\Controllers\Controleur.php(34): App\Controllers\Controleur->renseignerFiche()
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 12:37:00 --> Undefined array key "user_id"
+in APPPATH\Controllers\Controleur.php on line 163.
+ 1 APPPATH\Controllers\Controleur.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php', 163)
+ 2 APPPATH\Controllers\Controleur.php(34): App\Controllers\Controleur->renseignerFiche()
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 12:37:01 --> Undefined array key "nom"
+in APPPATH\Views\accueil_visiteur.php on line 35.
+ 1 APPPATH\Views\accueil_visiteur.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nom"', 'C:\\wamp64\\www\\GSB\\app\\Views\\accueil_visiteur.php', 35)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\accueil_visiteur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('accueil_visiteur', [], true)
+ 5 APPPATH\Controllers\Controleur.php(72): view('accueil_visiteur')
+ 6 APPPATH\Controllers\Controleur.php(24): App\Controllers\Controleur->accueil()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 12:37:05 --> Undefined array key "user_id"
+in APPPATH\Controllers\Controleur.php on line 109.
+ 1 APPPATH\Controllers\Controleur.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php', 109)
+ 2 APPPATH\Controllers\Controleur.php(30): App\Controllers\Controleur->submitFF('4', '14', '8', '5')
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 12:37:10 --> Undefined array key "user_id"
+in APPPATH\Controllers\Controleur.php on line 163.
+ 1 APPPATH\Controllers\Controleur.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php', 163)
+ 2 APPPATH\Controllers\Controleur.php(34): App\Controllers\Controleur->renseignerFiche()
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 12:37:11 --> Undefined array key "nom"
+in APPPATH\Views\accueil_visiteur.php on line 35.
+ 1 APPPATH\Views\accueil_visiteur.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nom"', 'C:\\wamp64\\www\\GSB\\app\\Views\\accueil_visiteur.php', 35)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\accueil_visiteur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('accueil_visiteur', [], true)
+ 5 APPPATH\Controllers\Controleur.php(72): view('accueil_visiteur')
+ 6 APPPATH\Controllers\Controleur.php(24): App\Controllers\Controleur->accueil()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 12:51:36 --> syntax error, unexpected variable "$query"
+in APPPATH\Models\Modele.php on line 108.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Modele')
+ 3 APPPATH\Controllers\Controleur.php(157): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Modele')
+ 4 APPPATH\Controllers\Controleur.php(34): App\Controllers\Controleur->renseignerFiche()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

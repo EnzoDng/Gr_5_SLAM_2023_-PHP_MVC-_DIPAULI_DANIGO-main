@@ -1,0 +1,319 @@
+/* Définition de la police "gill" */
+@font-face {
+    font-family: 'gill';
+    src: url('../font/GillSans.woff2') format('woff2'),
+        url('../font/GillSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Définition de la police "overpass" */
+@font-face{
+    font-family: overpass;
+    src: url('../font/overpass.ttf') format('truetype');
+}
+
+/* Animation pour faire glisser un élément vers la gauche */
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Animation pour agrandir et réduire un élément */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Style pour les listes (enlever les puces) */
+li {
+    list-style: none;
+}
+
+/* Style général de la page */
+body {
+    margin: 0%;
+    size: 100%;
+    background-color: #6D94C6;
+    font-family: overpass;
+}
+
+/* Style pour l'élément principal */
+.main {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Style pour le formulaire "connect" */
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8faed4;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    padding: 30px;
+}
+
+/* Style pour centrer le contenu */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Style pour les messages d'erreur */
+.error-message{
+    color:red;
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* Style pour les champs de formulaire */
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form input[type="number"],
+.frais-select {
+    border-radius: 10px;    
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    margin: 5% 0;
+    font-size: 25px;
+    color:#3c76c2;
+    align-items: center;
+}
+
+/* Style pour le formulaire */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Style pour la barre de navigation */
+.navbar{
+    background-image: url(../images/textur.png);
+    padding: 20px;
+    background-color: #8FAED4;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style pour le logo de la barre de navigation */
+.navbar img{
+    width: 200px;
+    height: 120px;
+}
+
+/* Style pour la partie gauche de la barre de navigation */
+.navbar_left,
+.navbar_right{
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour la partie droite de la bar*/
+.navbar_right > *{
+    color: white;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+/* Styles pour les liens de la barre de navigation à droite */
+.navbar_right a {
+    color: white;
+    text-decoration: none;
+}
+    
+    /* Styles pour le titre principal */
+.nom {
+    margin: 40px 0;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+    
+    /* Styles pour le conteneur principal */
+.container {
+    margin: 2% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20%;
+    padding: 2% 10%;
+    text-align: center;
+}
+    
+    /* Styles pour le deuxième conteneur */
+.container_2 {
+    min-height: 50vh;
+    max-width: 600px;
+    margin: 0 auto;
+}
+    
+    /* Styles pour le troisième conteneur */
+.container_3 {
+    min-height: 50vh;
+    max-width: 600px;
+    margin: 5% auto;
+}
+    
+    /* Styles pour le premier bloc */
+.block1 {
+    grid-column: 1/2;
+    background-color: #8faed4;
+    border-radius: 25px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+    /* Styles pour les éléments du premier bloc, du deuxième bloc et de la sous-section */
+.block1, .sub, .fo {
+    margin: 20px;
+}
+    
+    /* Styles pour le deuxième bloc */
+.block2 {
+    grid-column: 2/3;
+    background-color: #8faed4;
+    border-radius: 25px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+    /* Styles pour les éléments du deuxième bloc */
+.block2, .sub, input {
+    margin: 20px;
+}
+    
+    /* Styles pour les liens dans le conteneur principal */
+.container a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #6D94C6;
+}
+    
+    /* Styles pour la section des mois */
+.mois {
+    margin: 0 80%;
+    border-radius: 10px;
+    height: 60px;
+    width: 500px;
+    text-align: center;
+    color: #6D94C6;
+}
+    
+    /* Styles pour les titres */
+.container h1,
+.container_2 h1,
+.container_3 h1,
+.item h1 {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #6D94C6;
+}
+    
+    /* Styles pour les boutons d'envoi de formulaire */
+input[type="submit"] {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #6D94C6;
+}
+    
+    /* Styles pour la ligne horizontale */
+hr {
+    width: 100%;
+    height: 10px;
+    background-color: #8faed4;
+    border: 0;
+}
+    
+    /* Styles pour le titre de la section */
+.titre {
+    margin: 30px 35%;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+
+/* Style pour les champs numériques*/
+input[type=number] {
+-moz-appearance:textfield; /* Affichage du champ numérique de manière uniforme sur les navigateurs Firefox */
+appearance: textfield; /* Affichage du champ numérique de manière uniforme sur les navigateurs Chrome et Safari */
+}
+
+/* Désactivation des flèches de navigation pour les champs numériques sur Chrome et Safari */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Style pour les menus déroulants */
+select{
+-moz-appearance:textfield; /* Affichage du menu déroulant de manière uniforme sur les navigateurs Firefox */
+appearance: textfield; /* Affichage du menu déroulant de manière uniforme sur les navigateurs Chrome et Safari */
+}
+
+/* Style pour les étiquettes */
+label{
+color: #3c76c2; /* Couleur du texte des étiquettes */
+}
+
+/* Style pour les titres */
+h1{
+padding: 10px;
+text-decoration: none;
+color: white;
+font-size: 30px;
+text-transform: uppercase;
+border-radius: 10px;
+background-color: #6D94C6; 
+}
+
+/* Style pour les paragraphes */
+p{
+color: #3c76c2; 

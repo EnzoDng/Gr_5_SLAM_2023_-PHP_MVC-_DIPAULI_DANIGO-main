@@ -1,0 +1,271 @@
+CRITICAL - 2023-09-07 11:50:36 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\Controleur.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 11:50:56 --> Undefined variable $_SESSION
+in APPPATH\Views\accueil_visiteur.php on line 24.
+ 1 APPPATH\Views\accueil_visiteur.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_SESSION', 'C:\\wamp64\\www\\GSB\\app\\Views\\accueil_visiteur.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\accueil_visiteur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('accueil_visiteur', [], true)
+ 5 APPPATH\Controllers\Controleur.php(56): view('accueil_visiteur')
+ 6 APPPATH\Controllers\Controleur.php(32): App\Controllers\Controleur->accueil()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 11:52:57 --> Undefined variable $_SESSION
+in APPPATH\Views\accueil_visiteur.php on line 24.
+ 1 APPPATH\Views\accueil_visiteur.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_SESSION', 'C:\\wamp64\\www\\GSB\\app\\Views\\accueil_visiteur.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\accueil_visiteur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('accueil_visiteur', [], true)
+ 5 APPPATH\Controllers\Controleur.php(56): view('accueil_visiteur')
+ 6 APPPATH\Controllers\Controleur.php(32): App\Controllers\Controleur->accueil()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:33:38 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Controleur.php on line 96.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:34:07 --> syntax error, unexpected token ",", expecting "]"
+in APPPATH\Models\Modele.php on line 45.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Modele')
+ 3 APPPATH\Controllers\Controleur.php(72): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Modele')
+ 4 APPPATH\Controllers\Controleur.php(35): App\Controllers\Controleur->Login('dandre', 'oppg5')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:39:44 --> Undefined variable $_SESSION
+in APPPATH\Controllers\Controleur.php on line 96.
+ 1 APPPATH\Controllers\Controleur.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_SESSION', 'C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php', 96)
+ 2 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:42:51 --> Call to undefined function App\Controllers\ession_start()
+in APPPATH\Controllers\Controleur.php on line 95.
+ 1 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:43:04 --> Undefined variable $resultat
+in APPPATH\Models\Modele.php on line 45.
+ 1 APPPATH\Models\Modele.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultat', 'C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php', 45)
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:43:32 --> Undefined variable $_mois
+in APPPATH\Models\Modele.php on line 45.
+ 1 APPPATH\Models\Modele.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_mois', 'C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php', 45)
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:43:43 --> Undefined variable $bdd
+in APPPATH\Models\Modele.php on line 50.
+ 1 APPPATH\Models\Modele.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bdd', 'C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php', 50)
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:44:07 --> CodeIgniter\Database\BaseConnection::prepare(): Argument #1 ($func) must be of type Closure, string given, called in C:\wamp64\www\GSB\app\Models\Modele.php on line 50
+in SYSTEMPATH\Database\BaseConnection.php on line 920.
+ 1 APPPATH\Models\Modele.php(50): CodeIgniter\Database\BaseConnection->prepare('INSERT INTO LigneFraisForfait VALUES(?,?,?,?)')
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:44:39 --> CodeIgniter\Database\BaseConnection::prepare(): Argument #1 ($func) must be of type Closure, string given, called in C:\wamp64\www\GSB\app\Models\Modele.php on line 50
+in SYSTEMPATH\Database\BaseConnection.php on line 920.
+ 1 APPPATH\Models\Modele.php(50): CodeIgniter\Database\BaseConnection->prepare('INSERT INTO LigneFraisForfait VALUES(?,?,?,?)')
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:46:45 --> CodeIgniter\Database\BaseConnection::prepare(): Argument #1 ($func) must be of type Closure, string given, called in C:\wamp64\www\GSB\app\Models\Modele.php on line 45
+in SYSTEMPATH\Database\BaseConnection.php on line 920.
+ 1 APPPATH\Models\Modele.php(45): CodeIgniter\Database\BaseConnection->prepare('INSERT INTO LigneFraisForfait VALUES(?,?,?,?)')
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-07 12:47:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gsbv2`.`lignefraisforfait`, CONSTRAINT `lignefraisforfait_ibfk_1` FOREIGN KEY (`idVisiteur`, `mois`) REFERENCES `fichefrais` (`idVisiteur`, `mois`)) in C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO Lig...', 0)
+#1 C:\wamp64\www\GSB\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO Lig...')
+#2 C:\wamp64\www\GSB\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO Lig...')
+#3 C:\wamp64\www\GSB\app\Models\Modele.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO Lig...', Array)
+#4 C:\wamp64\www\GSB\app\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+#5 C:\wamp64\www\GSB\app\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+#6 C:\wamp64\www\GSB\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\GSB\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\GSB\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\GSB\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-07 12:47:56 --> Cannot add or update a child row: a foreign key constraint fails (`gsbv2`.`lignefraisforfait`, CONSTRAINT `lignefraisforfait_ibfk_1` FOREIGN KEY (`idVisiteur`, `mois`) REFERENCES `fichefrais` (`idVisiteur`, `mois`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Modele.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO LigneFraisForfait VALUES(?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:52:20 --> Undefined variable $_mois
+in APPPATH\Models\Modele.php on line 41.
+ 1 APPPATH\Models\Modele.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_mois', 'C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php', 41)
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:52:35 --> Undefined variable $verification_fiche
+in APPPATH\Models\Modele.php on line 42.
+ 1 APPPATH\Models\Modele.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verification_fiche', 'C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php', 42)
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:53:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::rowCount()
+in APPPATH\Models\Modele.php on line 44.
+ 1 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 2 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:53:52 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$count
+in APPPATH\Models\Modele.php on line 44.
+ 1 APPPATH\Models\Modele.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$count', 'C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php', 44)
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:54:38 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$count
+in APPPATH\Models\Modele.php on line 44.
+ 1 APPPATH\Models\Modele.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$count', 'C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php', 44)
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-07 12:55:25 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gsbv2`.`lignefraisforfait`, CONSTRAINT `lignefraisforfait_ibfk_1` FOREIGN KEY (`idVisiteur`, `mois`) REFERENCES `fichefrais` (`idVisiteur`, `mois`)) in C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO Lig...', 0)
+#1 C:\wamp64\www\GSB\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO Lig...')
+#2 C:\wamp64\www\GSB\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO Lig...')
+#3 C:\wamp64\www\GSB\app\Models\Modele.php(55): CodeIgniter\Database\BaseConnection->query('INSERT INTO Lig...', Array)
+#4 C:\wamp64\www\GSB\app\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+#5 C:\wamp64\www\GSB\app\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+#6 C:\wamp64\www\GSB\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\GSB\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\GSB\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\GSB\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-07 12:55:25 --> Cannot add or update a child row: a foreign key constraint fails (`gsbv2`.`lignefraisforfait`, CONSTRAINT `lignefraisforfait_ibfk_1` FOREIGN KEY (`idVisiteur`, `mois`) REFERENCES `fichefrais` (`idVisiteur`, `mois`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Modele.php(55): CodeIgniter\Database\BaseConnection->query('INSERT INTO LigneFraisForfait VALUES(?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 12:57:41 --> Attempt to read property "count" on null
+in APPPATH\Models\Modele.php on line 44.
+ 1 APPPATH\Models\Modele.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "count" on null', 'C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php', 44)
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-07 12:58:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gsbv2`.`lignefraisforfait`, CONSTRAINT `lignefraisforfait_ibfk_1` FOREIGN KEY (`idVisiteur`, `mois`) REFERENCES `fichefrais` (`idVisiteur`, `mois`)) in C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO Lig...', 0)
+#1 C:\wamp64\www\GSB\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO Lig...')
+#2 C:\wamp64\www\GSB\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO Lig...')
+#3 C:\wamp64\www\GSB\app\Models\Modele.php(55): CodeIgniter\Database\BaseConnection->query('INSERT INTO Lig...', Array)
+#4 C:\wamp64\www\GSB\app\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+#5 C:\wamp64\www\GSB\app\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+#6 C:\wamp64\www\GSB\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\GSB\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\GSB\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\GSB\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-07 12:58:52 --> Cannot add or update a child row: a foreign key constraint fails (`gsbv2`.`lignefraisforfait`, CONSTRAINT `lignefraisforfait_ibfk_1` FOREIGN KEY (`idVisiteur`, `mois`) REFERENCES `fichefrais` (`idVisiteur`, `mois`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Modele.php(55): CodeIgniter\Database\BaseConnection->query('INSERT INTO LigneFraisForfait VALUES(?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-07 13:06:48 --> mysqli_sql_exception: Duplicata du champ 'a17-septemb' pour la clef 'fichefrais.PRIMARY' in C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO Fic...', 0)
+#1 C:\wamp64\www\GSB\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO Fic...')
+#2 C:\wamp64\www\GSB\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO Fic...')
+#3 C:\wamp64\www\GSB\app\Models\Modele.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO Fic...', Array)
+#4 C:\wamp64\www\GSB\app\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+#5 C:\wamp64\www\GSB\app\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+#6 C:\wamp64\www\GSB\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\GSB\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\GSB\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\GSB\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-07 13:06:48 --> Duplicata du champ 'a17-septemb' pour la clef 'fichefrais.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Modele.php(46): CodeIgniter\Database\BaseConnection->query('INSERT INTO FicheFrais VALUES(?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Controleur.php(96): App\Models\Modele->ficheFrais('5', '4', '4', '4', 'a17')
+ 3 APPPATH\Controllers\Controleur.php(42): App\Controllers\Controleur->submitFf('5', '4', '4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-07 14:01:13 --> syntax error, unexpected variable "$_POST", expecting ")"
+in APPPATH\Controllers\Controleur.php on line 45.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

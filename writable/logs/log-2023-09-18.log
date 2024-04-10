@@ -1,0 +1,389 @@
+ERROR - 2023-09-18 11:24:21 --> Error connecting to the database: mysqli_sql_exception: Base 'gsbv3' inconnue in C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'gsbv3', 3306, '', 0)
+#1 C:\wamp64\www\GSB\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\GSB\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\GSB\app\Models\Modele.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v...', Array)
+#4 C:\wamp64\www\GSB\app\Controllers\Controleur.php(85): App\Models\Modele->getId('dandre', 'oppg5')
+#5 C:\wamp64\www\GSB\app\Controllers\Controleur.php(28): App\Controllers\Controleur->Login('dandre', 'oppg5')
+#6 C:\wamp64\www\GSB\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\GSB\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\GSB\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\GSB\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Base 'gsbv3' inconnue in C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\wamp64\www\GSB\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\GSB\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\GSB\app\Models\Modele.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v...', Array)
+#3 C:\wamp64\www\GSB\app\Controllers\Controleur.php(85): App\Models\Modele->getId('dandre', 'oppg5')
+#4 C:\wamp64\www\GSB\app\Controllers\Controleur.php(28): App\Controllers\Controleur->Login('dandre', 'oppg5')
+#5 C:\wamp64\www\GSB\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#6 C:\wamp64\www\GSB\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#7 C:\wamp64\www\GSB\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\GSB\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-18 11:24:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Base 'gsbv3' inconnue
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Modele.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM visiteur WHERE login = ? AND mdp = ?', [...])
+ 3 APPPATH\Controllers\Controleur.php(85): App\Models\Modele->getId('dandre', 'oppg5')
+ 4 APPPATH\Controllers\Controleur.php(28): App\Controllers\Controleur->Login('dandre', 'oppg5')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 11:54:05 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\Controleur.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-18 11:54:27 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\Controleur.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-18 11:54:36 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\Controleur.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-18 11:58:28 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(191): view('renseigner_fiche')
+ 6 APPPATH\Controllers\Controleur.php(45): App\Controllers\Controleur->supprimerFiche()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 11:59:11 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(195): view('renseigner_fiche')
+ 6 APPPATH\Controllers\Controleur.php(45): App\Controllers\Controleur->supprimerFiche()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:43:34 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(195): view('renseigner_fiche')
+ 6 APPPATH\Controllers\Controleur.php(45): App\Controllers\Controleur->supprimerFiche()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:46:14 --> Undefined variable $quantites
+in APPPATH\Controllers\Controleur.php on line 195.
+ 1 APPPATH\Controllers\Controleur.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php', 195)
+ 2 APPPATH\Controllers\Controleur.php(45): App\Controllers\Controleur->supprimerFiche()
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:47:43 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(182): view('renseigner_fiche', [...])
+ 6 APPPATH\Controllers\Controleur.php(135): App\Controllers\Controleur->renseignerFiche()
+ 7 APPPATH\Controllers\Controleur.php(53): App\Controllers\Controleur->submitFHF('Frais', '2023-09-18', '5')
+ 8 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 9 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:47:48 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(182): view('renseigner_fiche', [...])
+ 6 APPPATH\Controllers\Controleur.php(30): App\Controllers\Controleur->renseignerFiche()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:47:52 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(182): view('renseigner_fiche', [...])
+ 6 APPPATH\Controllers\Controleur.php(30): App\Controllers\Controleur->renseignerFiche()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:49:05 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(182): view('renseigner_fiche', [...])
+ 6 APPPATH\Controllers\Controleur.php(30): App\Controllers\Controleur->renseignerFiche()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:49:20 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(195): view('renseigner_fiche')
+ 6 APPPATH\Controllers\Controleur.php(45): App\Controllers\Controleur->supprimerFiche()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:14:35 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Controleur.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:14:36 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Controleur.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:14:36 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Controleur.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:14:42 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Controleur.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:14:48 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Controleur.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:17:03 --> Call to undefined function App\Models\etlocale()
+in APPPATH\Models\Modele.php on line 113.
+ 1 APPPATH\Controllers\Controleur.php(215): App\Models\Modele->updateQuantitesFraisForfait('a17', '11', '20', '15', '20')
+ 2 APPPATH\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('11', '20', '15', '20')
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:17:16 --> mysqli_sql_exception: Champ '$mois' inconnu dans where clause in C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE lignefra...', 0)
+#1 C:\wamp64\www\GSB\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lignefra...')
+#2 C:\wamp64\www\GSB\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lignefra...')
+#3 C:\wamp64\www\GSB\app\Models\Modele.php(117): CodeIgniter\Database\BaseConnection->query('UPDATE lignefra...', Array)
+#4 C:\wamp64\www\GSB\app\Controllers\Controleur.php(215): App\Models\Modele->updateQuantitesFraisForfait('a17', '11', '20', '20', '20')
+#5 C:\wamp64\www\GSB\app\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('11', '20', '20', '20')
+#6 C:\wamp64\www\GSB\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\GSB\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\GSB\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\GSB\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-18 13:17:16 --> Champ '$mois' inconnu dans where clause
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Modele.php(117): CodeIgniter\Database\BaseConnection->query('UPDATE lignefraisforfait SET quantite= ? WHERE idVisiteur = ? AND mois = $mois AND idFraisForafait = ETP', [...])
+ 2 APPPATH\Controllers\Controleur.php(215): App\Models\Modele->updateQuantitesFraisForfait('a17', '11', '20', '20', '20')
+ 3 APPPATH\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('11', '20', '20', '20')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:19:12 --> mysqli_sql_exception: Champ 'idFraisForafait' inconnu dans where clause in C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE lignefra...', 0)
+#1 C:\wamp64\www\GSB\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lignefra...')
+#2 C:\wamp64\www\GSB\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lignefra...')
+#3 C:\wamp64\www\GSB\app\Models\Modele.php(117): CodeIgniter\Database\BaseConnection->query('UPDATE lignefra...', Array)
+#4 C:\wamp64\www\GSB\app\Controllers\Controleur.php(215): App\Models\Modele->updateQuantitesFraisForfait('a17', '11', '40', '20', '20')
+#5 C:\wamp64\www\GSB\app\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('11', '40', '20', '20')
+#6 C:\wamp64\www\GSB\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\GSB\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\GSB\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\GSB\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-18 13:19:12 --> Champ 'idFraisForafait' inconnu dans where clause
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Modele.php(117): CodeIgniter\Database\BaseConnection->query('UPDATE lignefraisforfait SET quantite= ? WHERE idVisiteur = ? AND mois = ? AND idFraisForafait = ETP', [...])
+ 2 APPPATH\Controllers\Controleur.php(215): App\Models\Modele->updateQuantitesFraisForfait('a17', '11', '40', '20', '20')
+ 3 APPPATH\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('11', '40', '20', '20')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:19:42 --> mysqli_sql_exception: Champ 'ETP' inconnu dans where clause in C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\GSB\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE lignefra...', 0)
+#1 C:\wamp64\www\GSB\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lignefra...')
+#2 C:\wamp64\www\GSB\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lignefra...')
+#3 C:\wamp64\www\GSB\app\Models\Modele.php(117): CodeIgniter\Database\BaseConnection->query('UPDATE lignefra...', Array)
+#4 C:\wamp64\www\GSB\app\Controllers\Controleur.php(215): App\Models\Modele->updateQuantitesFraisForfait('a17', '11', '50', '20', '20')
+#5 C:\wamp64\www\GSB\app\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('11', '50', '20', '20')
+#6 C:\wamp64\www\GSB\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\GSB\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\GSB\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\GSB\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-18 13:19:42 --> Champ 'ETP' inconnu dans where clause
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Modele.php(117): CodeIgniter\Database\BaseConnection->query('UPDATE lignefraisforfait SET quantite= ? WHERE idVisiteur = ? AND mois = ? AND idFraisForfait = ETP', [...])
+ 2 APPPATH\Controllers\Controleur.php(215): App\Models\Modele->updateQuantitesFraisForfait('a17', '11', '50', '20', '20')
+ 3 APPPATH\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('11', '50', '20', '20')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:20:29 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(217): view('renseigner_fiche')
+ 6 APPPATH\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('11', '50', '20', '20')
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:21:28 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(217): view('renseigner_fiche')
+ 6 APPPATH\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('11', '50', '20', '30')
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:49:30 --> Undefined variable $quantites
+in APPPATH\Views\renseigner_fiche.php on line 96.
+ 1 APPPATH\Views\renseigner_fiche.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantites', 'C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\GSB\\app\\Views\\renseigner_fiche.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('renseigner_fiche', [], true)
+ 5 APPPATH\Controllers\Controleur.php(218): view('renseigner_fiche')
+ 6 APPPATH\Controllers\Controleur.php(55): App\Controllers\Controleur->soumettreModificationFraisForfait('18', '50', '20', '30')
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:17:39 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Controleur.php on line 58.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:18:05 --> syntax error, unexpected variable "$querry"
+in APPPATH\Models\Modele.php on line 131.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Modele')
+ 3 APPPATH\Controllers\Controleur.php(135): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Modele')
+ 4 APPPATH\Controllers\Controleur.php(53): App\Controllers\Controleur->submitFHF('frais', '2023-09-27', '22')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:18:30 --> syntax error, unexpected variable "$query"
+in APPPATH\Models\Modele.php on line 131.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\GSB\\app\\Models\\Modele.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Modele')
+ 3 APPPATH\Controllers\Controleur.php(135): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Modele')
+ 4 APPPATH\Controllers\Controleur.php(53): App\Controllers\Controleur->submitFHF('frais', '2023-09-27', '22')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:25:08 --> Undefined array key "id_fhf"
+in APPPATH\Controllers\Controleur.php on line 57.
+ 1 APPPATH\Controllers\Controleur.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_fhf"', 'C:\\wamp64\\www\\GSB\\app\\Controllers\\Controleur.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:29:14 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(235): CodeIgniter\Model->__call('updateFraisHorsForfait', [...])
+ 4 APPPATH\Controllers\Controleur.php(57): App\Controllers\Controleur->modificationFraisHorsForfait('2023-09-28', 'fraise', '10', '7')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:29:34 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(235): CodeIgniter\Model->__call('updateFraisHorsForfait', [...])
+ 4 APPPATH\Controllers\Controleur.php(57): App\Controllers\Controleur->modificationFraisHorsForfait('2023-09-25', 'Fraise', '30', '9')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:30:58 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(235): CodeIgniter\Model->__call('updateFraisHorsForfait', [...])
+ 4 APPPATH\Controllers\Controleur.php(57): App\Controllers\Controleur->modificationFraisHorsForfait('2023-09-18', 'Fraise', '20.00', '9')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:33:07 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(235): CodeIgniter\Model->__call('updateFraisHorsForfait', [...])
+ 4 APPPATH\Controllers\Controleur.php(57): App\Controllers\Controleur->modificationFraisHorsForfait('2023-09-18', 'Fraise', '20.00', '9')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:36:17 --> htmlspecialchars(): Argument #2 ($flags) must be of type int, string given
+in APPPATH\Controllers\Controleur.php on line 49.
+ 1 APPPATH\Controllers\Controleur.php(49): htmlspecialchars('dandre', 'oppg5')
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
